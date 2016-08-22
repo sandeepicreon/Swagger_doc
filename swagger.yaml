@@ -1,0 +1,53 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: SiteCompli Retail API
+  description: s an example to demonstrate features in the swagger-2.0 specification
+  termsOfService: http://sitecompli.com/
+  contact:
+    name: Athena API Team
+    email: sandeep@sitecompli.com
+    url: http://wwwsitcompli.com
+  license:
+    name: SiteCompli
+    url: https://github.com/sandeep
+host: polls.apiblueprint.org
+basePath:
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /agencies:
+    get:
+      responses:
+        "200":
+          description: agencies response
+          schema:
+            type: array
+            items:
+              $ref: 'AgencyResponse.json'
+        default:
+          description: unexpected error
+          schema:
+            $ref: 'Error.json'
+    post:
+      description: Creates a new Agencies in the System.
+      parameters:
+        - name: Agency
+          in: body
+          description: Agency to add to the store
+          required: true
+          schema:
+            $ref: 'AgencyRequest.json'
+      responses:
+        "200":
+          description: Agecny response
+          schema:
+            $ref: 'Agency.json'
+        default:
+          description: unexpected error
+          schema:
+            $ref: 'Error.json'

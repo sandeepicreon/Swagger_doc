@@ -1,0 +1,36 @@
+[
+  {
+    "state_province": {
+      "id": 25,
+      "value": "New York"
+    },
+    "city": {
+      "id": 60,
+      "value": "Albany"
+    },
+    "value": "Albany Public Works - Permit and Inspection Division",
+    "county": {
+      "id": null,
+      "value": null
+    },
+    "government_level": 1,
+    "id": 1
+  },
+  {
+    "state_province": {
+      "id": 49,
+      "value": "Virginia"
+    },
+    "city": {
+      "id": 63,
+      "value": "Alexandria"
+    },
+    "value": "Alexandria Department of Buildings",
+    "county": {
+      "id": null,
+      "value": null
+    },
+    "government_level": 1,
+    "id": 2
+  }
+]
